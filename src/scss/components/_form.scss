@@ -1,0 +1,90 @@
+.form {
+  margin: 100px 0;
+  max-width: 100%;
+  .form-input {
+    display: flex;
+    flex-direction: column;
+    .input {
+      background-color: $primary;
+      color: $white;
+      border-radius: 33px;
+      height: 66px;
+      outline: none;
+      border: none;
+      max-width: 665px;
+      font-size: 20px;
+      margin: 18px 0;
+      padding: 0 33px;
+    }
+
+    &--submit {
+      cursor: pointer;
+      background: linear-gradient(
+        90deg,
+        rgba(58, 227, 195, 1) 0%,
+        rgba(78, 108, 228, 1) 83%,
+        rgba(86, 63, 240, 1) 100%
+      );
+      font-size: 20px;
+      color: $white;
+      width: 252px;
+      height: 66px;
+      border-radius: 33px;
+      margin: 18px 0;
+      padding: 0 33px;
+      border: none;
+
+      &:hover {
+        background: linear-gradient(
+          90deg,
+          rgba(58, 227, 195, 1) 0%,
+          rgba(78, 108, 228, 1) 98%,
+          rgba(86, 63, 240, 1) 100%
+        );
+      }
+    }
+
+    .label {
+      color: $white;
+      margin: 18px 33px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+    &--checkbox {
+      margin: 18px 33px;
+      .checkbox {
+        visibility: hidden;
+      }
+
+      .checkbox-label {
+        display: flex;
+        align-items: flex-start;
+        letter-spacing: 0.03em;
+        margin-bottom: 30px;
+      }
+      .checkbox-label::before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 1px solid $primary;
+        border-radius: 2px;
+        font-size: 20px;
+        line-height: 24px;
+        cursor: pointer;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        background-color: $white;
+      }
+      .checkbox:checked + .checkbox-label::before {
+        border-color: $primary;
+        background-color: $secondary;
+      }
+      .checkbox:focus + .checkbox-label::before {
+        border-color: $primary;
+        background-color: $secondary;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@use './fonts.scss';
+
+@import 'utils/colors';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/form';
+@import 'layout/login';
+
+body {
+  //   background-color: red;
+  font-family: 'Poppins';
+  color: $white;
+  background-color: $secondary;
+}
