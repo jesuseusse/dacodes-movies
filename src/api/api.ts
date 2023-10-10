@@ -12,12 +12,7 @@ export const moviesApi = axios.create({
 export const getGuestSession = async () => {
   let res
   try {
-    res = await moviesApi.get('/authentication/guest_session/new', {
-      headers: {
-        accept: 'application/json',
-        Authorization: `Bearer ${BEARER_TOKEN}`
-      }
-    })
+    res = await moviesApi.get('/authentication/guest_session/new')
   } catch (error) {
     console.error(error)
   }
