@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom'
 import { Login } from './pages/Login'
 import 'normalize.css'
 import { Footer } from './components/Footer'
+import { Home } from './pages/Home'
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Home />} />
       </Routes>
       <Footer />
     </div>

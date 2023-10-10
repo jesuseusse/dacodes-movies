@@ -1,0 +1,29 @@
+.btn {
+  font-size: 20px;
+  color: $white;
+  width: 243px;
+  height: 64px;
+  border-radius: 33px;
+  margin: 18px;
+  padding: 0 33px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(58, 227, 195, 1) 0%,
+    rgba(78, 108, 228, 1) 83%,
+    rgba(86, 63, 240, 1) 100%
+  );
+  &:hover {
+    background: linear-gradient(
+      90deg,
+      rgba(58, 227, 195, 1) 0%,
+      rgba(78, 108, 228, 1) 98%,
+      rgba(86, 63, 240, 1) 100%
+    );
+  }
+  &.active {
+    background: none;
+    background-color: $primary;
+  }
+}

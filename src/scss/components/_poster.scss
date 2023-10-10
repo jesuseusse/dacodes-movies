@@ -1,0 +1,60 @@
+.poster {
+  position: relative;
+  width: 253px;
+  height: 367px;
+  border-radius: 50px;
+  background-color: red;
+  &__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    object-fit: cover;
+  }
+
+  .poster__content {
+    position: absolute;
+    top: 0;
+    // display: none;
+    width: calc(100% - 80px);
+    height: calc(100% - 80px);
+    padding: 40px;
+    background-color: $gray;
+    border-radius: 50px;
+    background: rgba(81, 65, 234, 0.8);
+    &__title {
+      text-align: center;
+      margin: 0;
+      color: $white;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 127.5%;
+    }
+    &__subtitle {
+      margin: 0;
+      color: $white;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 127.5%; /* 15.3px */
+    }
+    &__overview {
+      margin-top: 12px;
+      color: $white;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.5;
+      max-height: 13.5em;
+      overflow: hidden;
+    }
+    &__rate {
+      line-height: 127.5%;
+    }
+  }
+
+  &:hover + .poster__content {
+    display: flex;
+    position: absolute;
+  }
+}
