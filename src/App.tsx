@@ -8,6 +8,7 @@ import { Footer } from './components/Footer'
 import { Home } from './pages/Home'
 
 function App() {
+  //TODO get session id to show home or show login instead
   return (
     <div className="App">
       <Header />

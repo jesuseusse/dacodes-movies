@@ -4,6 +4,7 @@
   height: 367px;
   border-radius: 50px;
   background-color: red;
+  overflow: hidden;
   &__img {
     width: 100%;
     height: 100%;
@@ -12,6 +13,7 @@
   }
 
   .poster__content {
+    transition: all 0.5s ease;
     position: absolute;
     top: 0;
     // display: none;

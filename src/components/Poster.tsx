@@ -50,7 +50,7 @@ export const Poster = ({ movie }: Props) => {
       />
       <div
         className="poster__content"
-        style={{ display: showDetails ? 'block' : 'none' }}
+        style={{ top: showDetails ? '0' : '367px' }}
       >
         <h3 className="poster__content__title">{movie.title}</h3>
         <h4 className="poster__content__subtitle">{details}</h4>
