@@ -10,9 +10,11 @@ jobs:
     environment: main
     steps:
       - uses: actions/checkout@v2
+        env:
+          REACT_APP_BEARER: ${{ vars.REACT_APP_BEARER }}
       - run: yarn install && yarn build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_DEV_JESUS }}'
-          projectId: dev-jesus
+          projectId: yisus-dev
