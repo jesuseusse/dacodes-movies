@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dacodes-movies/static/css/main.39fd75b3.css",
+    "main.js": "/dacodes-movies/static/js/main.7743a5bc.js",
+    "static/js/787.a21619cb.chunk.js": "/dacodes-movies/static/js/787.a21619cb.chunk.js",
+    "index.html": "/dacodes-movies/index.html",
+    "main.39fd75b3.css.map": "/dacodes-movies/static/css/main.39fd75b3.css.map",
+    "main.7743a5bc.js.map": "/dacodes-movies/static/js/main.7743a5bc.js.map",
+    "787.a21619cb.chunk.js.map": "/dacodes-movies/static/js/787.a21619cb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39fd75b3.css",
+    "static/js/main.7743a5bc.js"
+  ]
+}
