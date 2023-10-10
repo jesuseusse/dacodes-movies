@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Movie } from '../types/movie'
 import { moviesApi } from '../api/api'
 import { Rating } from '@mui/material'

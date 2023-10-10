@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useGetMovies } from '../hooks/useGetMovies'
 import { Poster } from '../components/Poster'
 
@@ -16,6 +16,7 @@ export const Home = () => {
 
   useEffect(() => {
     getMovies(current.path, currentPage)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [current, currentPage])
 
   useEffect(() => {}, [current])

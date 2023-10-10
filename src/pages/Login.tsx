@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
@@ -34,6 +34,7 @@ export const Login = () => {
 
   useEffect(() => {
     if (!!sessionId) navigate('/')
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sessionId])
 
   return (
