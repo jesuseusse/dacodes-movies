@@ -1,5 +1,4 @@
 {
-  "homepage": "https://jneusse.github.io/dacodes-movies",
   "name": "movies-dacodes",
   "version": "0.1.0",
   "private": true,
@@ -17,6 +16,7 @@
     "@types/react-dom": "^18.2.11",
     "axios": "^1.5.1",
     "bootstrap": "5.3.2",
+    "firebase": "^10.4.0",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
