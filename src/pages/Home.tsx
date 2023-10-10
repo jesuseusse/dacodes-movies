@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useGetMovies } from '../hooks/useGetMovies'
 import { Poster } from '../components/Poster'
+import { useNavigate } from 'react-router-dom'
 
 const categories = [
   { path: 'now_playing', name: 'Now Playing' },
@@ -13,13 +14,18 @@ export const Home = () => {
   const [current, setCurrent] = useState(categories[0])
   const [currentPage, setCurrentPage] = useState(1)
   const { loading, totalPages, movies, getMovies } = useGetMovies()
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    const sessionId = localStorage.getItem('guest_session_id') || ''
+
+    if (!sessionId) navigate('/login')
+  })
 
   useEffect(() => {
     getMovies(current.path, currentPage)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [current, currentPage])
-
-  useEffect(() => {}, [current])
 
   return (
     <div className="layout-home">

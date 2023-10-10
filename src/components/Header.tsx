@@ -1,8 +1,4 @@
-interface Props {
-  isLoggedIn?: boolean
-}
-
-export const Header = ({ isLoggedIn = false }: Props) => {
+export const Header = () => {
   return (
     <header className="header">
       <img
@@ -12,15 +8,14 @@ export const Header = ({ isLoggedIn = false }: Props) => {
         height="68"
         alt="dacodes logo"
       />
-      {!isLoggedIn && (
-        <img
-          className="header__btn"
-          src="./login1.svg"
-          width="62"
-          height="62"
-          alt="login icon"
-        />
-      )}
+
+      <img
+        className="header__btn"
+        src="./login1.svg"
+        width="62"
+        height="62"
+        alt="login icon"
+      />
     </header>
   )
 }
